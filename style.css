@@ -72,9 +72,7 @@ body {
     hyphens: auto;
 }
 
-main {
-    min-height: calc(100vh-60px);
-}
+main {}
 
 img {
     width: 100%;
@@ -429,13 +427,10 @@ footer span.navn {
 7. STYLING AF SPECIFIKKE SIDER  - SLUT
 \*------------------------------------*/
 
-main {
-    min-height: calc(100vh-60px);
-}
+main {}
 
 .blue_section {
     background-color: var(--colorThree);
-    min-height: calc(100vh-60px);
     color: white;
 }
 
