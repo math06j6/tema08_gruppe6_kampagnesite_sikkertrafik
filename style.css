@@ -199,29 +199,46 @@ nav {
     position: sticky;
     top: 0;
     width: 100%;
+
+
+}
+
+.menu_top {
     background-color: var(--colorTwo);
+
+
+}
+
+.menu_bottom {
+    background-color: var(--colorThree);
+    display: none;
 }
 
 .navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
     margin: 0 auto;
+    max-width: 1400px;
+
 }
 
 .subnav {
-    background-color: var(--colorThree);
     color: var(--colorSeven);
     margin: 0 auto;
     padding: 0 20px;
-    display: none;
+    max-width: 1400px;
+
 }
 
 .subnav ul {
     display: flex;
     flex-wrap: wrap;
+    max-width: 1400px;
 }
 
 .subnav li {
-    flex-flow: 1;
-    padding: 1rem;
+    padding: 21px;
     font-family: Safety_DemiBold, Helvetica, Arial, sans-serif;
     font-size: 0.9rem;
     cursor: pointer;
@@ -298,6 +315,27 @@ a.hjem p {
 a.hjem:hover p,
 a.hjem:active p {
     color: var(--colorThree);
+}
+
+.searchButton {
+    background-image: url(filer/search_icon.svg);
+    display: inline-block;
+    padding: 20px;
+    width: 40px;
+    height: 40px;
+    margin: auto 0;
+    background-position: center;
+    background-size: contain;
+    filter: invert(100%) sepia(28%) saturate(0%) hue-rotate(68deg) brightness(113%) contrast(100%);
+    background-position: center;
+    background-size: contain;
+    height: 100%;
+    background-repeat: no-repeat;
+    transition: .3s;
+}
+
+.searchButton:hover {
+    filter: invert(83%) sepia(21%) saturate(3309%) hue-rotate(325deg) brightness(100%) contrast(102%);
 }
 
 /*------------------------------------*\
@@ -477,7 +515,7 @@ footer span.navn {
 \*------------------------------------*/
 
 main {
-    min-height: calc(100vh - 153px);
+    min-height: calc(100vh - 213px);
 }
 
 .blue_section {
@@ -500,7 +538,7 @@ main {
 
 
 @media only screen and (min-width: 800px) {
-    .subnav {
+    .menu_bottom {
         display: block;
     }
 
