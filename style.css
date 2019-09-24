@@ -193,8 +193,45 @@ section {
     position: sticky;
     top: 0;
     width: 100%;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
     background-color: var(--colorTwo);
 }
+
+.navbar {
+    margin: 0 auto;
+}
+
+.subnav {
+    background-color: var(--colorThree);
+    color: var(--colorSeven);
+    margin: 0 auto;
+    padding: 0 20px;
+    display: none;
+}
+
+.subnav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subnav li {
+    flex-flow: 1;
+    padding: 1rem;
+    font-family: Safety_DemiBold, Helvetica, Arial, sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.subnav li:hover,
+.subnav li:active {
+    color: white;
+}
+
 
 /* logo */
 
@@ -460,6 +497,14 @@ main {
 /*------------------------------------*\
 8: MEDIA QUERIES
 \*------------------------------------*/
+
+
+@media only screen and (min-width: 800px) {
+    .subnav {
+        display: block;
+    }
+
+}
 
 /*------------------------------------*\
 8: MEDIA QUERIES - SLUT
