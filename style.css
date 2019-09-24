@@ -31,12 +31,16 @@ INDHOLDSFORTEGNELSE:
     --colorOne: #1a1a1a;
     --colorTwo: #28292c;
     --colorThree: #373d46;
-    --colorFour: #ccc;
+    --colorFour: #414b5a;
     --colorFive: #9ea1a5;
     --colorSix: #eaeaea;
-    --colorSeven: #3f0;
-    --colorEight: #fd6d6f;
+    --colorSeven: #ccc;
+    --colorEight: #6c7b95;
+    --colorNine: #5A80D0;
+    --colorTen: #3f0;
+    --colorElleven: #fd6d6f;
 }
+
 
 
 /*------------------------------------*\
@@ -70,6 +74,7 @@ body {
     background-color: white;
     overflow-wrap: break-word;
     hyphens: auto;
+    color: var(--colorThree);
 }
 
 main {}
@@ -138,6 +143,8 @@ h2 {
     font-family: Safety_Light, Helvetica, Arial, sans-serif;
     color: var(--colorTwo);
     font-size: 2.5rem;
+    font-weight: 100;
+    margin: 1rem 0;
 
 }
 
@@ -165,7 +172,7 @@ ul {
 
 section {
     width: 100%;
-    padding: 2rem 0 4rem;
+    padding: 2 0 4rem;
 }
 
 .section_header {
@@ -239,7 +246,7 @@ section {
 
 /* Styling af link i navigations bar */
 a.hjem {
-    color: var(--colorSeven);
+    color: var(--colorTen);
     text-decoration: none;
     cursor: pointer;
     transition: 0.25s;
@@ -272,22 +279,17 @@ footer {
     width: 100%;
     left: 0;
     bottom: 0;
+    margin: 0;
     overflow: hidden;
+
+
+}
+
+.footer_wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
 
-footer section {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-}
-
-footer div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 a.github_link {
@@ -315,6 +317,14 @@ a.github_link {
 .social_links .fa:hover {
     color: white;
 
+}
+
+footer .servicemenu,
+footer .adresse,
+social_links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .adresse {
@@ -373,13 +383,13 @@ footer span.navn {
 .tilbage {
     max-width: 1400px;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
+
 }
 
 .top_link {
-    display: block;
-    padding: 2rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
     margin-left: auto;
 }
 
@@ -387,12 +397,14 @@ footer span.navn {
     padding: 1rem 0;
     margin-left: auto;
     text-decoration: none;
-    color: var(--colorTwo);
+    font-family: Safety_DemiBold, Helvetica, Arial, sans-serif;
+    display: block;
 }
 
 .top_link h4 {
     font-size: 2rem;
     transition: all 0.25s ease 0s;
+    color: var(--colorEight);
 }
 
 .top_link h4:hover {
@@ -427,10 +439,12 @@ footer span.navn {
 7. STYLING AF SPECIFIKKE SIDER  - SLUT
 \*------------------------------------*/
 
-main {}
+main {
+    min-height: calc(100vh - 153px);
+}
 
 .blue_section {
-    background-color: var(--colorThree);
+    background-color: var(--colorFour);
     color: white;
 }
 
