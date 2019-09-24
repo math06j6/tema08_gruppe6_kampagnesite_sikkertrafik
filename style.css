@@ -26,6 +26,8 @@ INDHOLDSFORTEGNELSE:
 \*------------------------------------*/
 
 :root {
+
+    /* Nøjagtig de samme farvekoder som anvendes på https://www.sikkertrafik.dk/ */
     --colorOne: #1a1a1a;
     --colorTwo: #28292c;
     --colorThree: #373d46;
@@ -161,6 +163,17 @@ p {
 
 ul {
     list-style: none;
+}
+
+section {
+    width: 100%;
+    padding: 2rem 0 4rem;
+}
+
+.section_header {
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 1400px;
 }
 
 /*------------------------------------*\
@@ -411,10 +424,28 @@ footer span.navn {
 7.1 FORSIDE - SLUT
 \*------------------------------------*/
 
+
 /*------------------------------------*\
 7. STYLING AF SPECIFIKKE SIDER  - SLUT
 \*------------------------------------*/
 
+main {
+    min-height: calc(100vh-60px);
+}
+
+.blue_section {
+    background-color: var(--colorThree);
+    min-height: calc(100vh-60px);
+    color: white;
+}
+
+
+.blue_section h2,
+.blue_section h3,
+.blue_section h4,
+.blue_section p {
+    color: white;
+}
 
 
 /*------------------------------------*\
