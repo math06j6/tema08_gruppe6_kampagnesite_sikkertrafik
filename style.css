@@ -1,0 +1,422 @@
+/*------------------------------------*\
+****************************************
+
+
+INDHOLDSFORTEGNELSE:
+********************
+
+1: VARIABLER
+2. LAYOUT
+3. TYPOGRAFI
+4. HEADER
+5. FOOTER
+6. KNAPPER
+7. STYLING AF SPECIFIKKE SIDER
+    7.1 FORSIDE
+    7.2 Single/"Detalje"
+8. MEDIA QUERIES
+
+
+****************************************
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+1: VARIABLER
+\*------------------------------------*/
+
+:root {
+    --colorOne: #1a1a1a;
+    --colorTwo: #28292c;
+    --colorThree: #373d46;
+    --colorFour: #ccc;
+    --colorFive: #9ea1a5;
+    --colorSix: #eaeaea;
+    --colorSeven: #3f0;
+    --colorEight: #fd6d6f;
+}
+
+
+/*------------------------------------*\
+1. VARIABLER - SLUT
+\*------------------------------------*/
+
+
+
+
+/*------------------------------------*\
+2. LAYOUT
+\*------------------------------------*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+
+}
+
+ul {
+    list-style: none;
+}
+
+/*------------------------------------*\
+2. LAYOUT - SLUT
+\*------------------------------------*/
+
+/*------------------------------------*\
+3. TYPOGRAFI
+\*------------------------------------*/
+
+/* @font-face */
+
+@font-face {
+    font-family: Safety_Bold;
+    src: url("fonts/Safety-Bold_WEB.woff2") format("woff2"),
+        url("fonts/Safety-Bold_WEB.woff") format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Safety_DemiBold;
+    src: url("fonts/Safety-DemiBold_WEB.woff2") format("woff2"), url("fonts/Safety-DemiBold_WEB.woff") format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Safety_Light;
+    src: url("fonts/Safety-Light_WEB.woff2") format("woff2"), url("fonts/Safety-Light_WEB.woff") format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: Safety_Regular;
+    src: url("fonts/Safety-Regular_WEB.woff2") format("woff2"), url("fonts/Safety-Regular_WEB.woff") format("woff");
+    font-weight: 400;
+    font-style: normal
+}
+
+/* @font-face Slut */
+
+h1 {
+    font-family: 'Open Sans', Helvetica, Arial, Roboto, sans-serif;
+
+    color: var(--colorTwo);
+    font-size: 2.5rem;
+
+}
+
+
+h2 {
+    font-family: Safety_Light, Helvetica, Arial, sans-serif;
+    color: var(--colorTwo);
+    font-size: 2.5rem;
+
+}
+
+h3 {
+    font-family: Safety_Light, Helvetica, Arial, sans-serif;
+
+}
+
+h4 {
+    font-family: Safety_Light, Helvetica, Arial, sans-serif;
+
+}
+
+p {
+    font-family: 'Open Sans', Helvetica, Arial, Roboto, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+/*------------------------------------*\
+3. TYPOGRAFI - SLUT
+\*------------------------------------*/
+
+/*------------------------------------*\
+4. HEADER
+\*------------------------------------*/
+
+.site_header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: var(--colorTwo);
+}
+
+/* logo */
+
+
+.navigation .logo {
+    height: 30px;
+    width: 180px;
+
+}
+
+.logo-container svg {
+    height: 30px;
+    width: 180px;
+    fill: #fff;
+    margin: auto 0;
+}
+
+.logo-container:hover svg {
+    fill: #3f0;
+}
+
+.logo-container {
+    cursor: pointer;
+    height: 60px;
+    padding: 0 20px;
+    /*    height: 100%;*/
+    color: #3f0;
+}
+
+.nyt_logo {
+    /*SVG-filen er indsat som background-image. Det gør det muligt at skifte farve på filen*/
+    background-image: url("filer/logo.png");
+    display: inline-block;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    margin: auto 0;
+    background-position: center;
+    background-size: contain;
+    /*Vi bruger filter til at vælge hvid som farve*/
+    filter: invert(100%) sepia(28%) saturate(0%) hue-rotate(68deg) brightness(113%) contrast(100%);
+    background-position: center;
+    background-size: contain;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+/* logo - slut */
+
+/* Styling af link i navigations bar */
+a.hjem {
+    color: var(--colorSeven);
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.25s;
+    display: flex;
+    height: 100%;
+}
+
+a.hjem p {
+    font-family: 'Open Sans', Helvetica, Arial, Roboto, sans-serif;
+}
+
+a.hjem:hover p,
+a.hjem:active p {
+    color: var(--colorThree);
+}
+
+/*------------------------------------*\
+4. HEADER - SLUT
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+5. FOOTER
+\*------------------------------------*/
+
+footer {
+    background: var(--colorTwo);
+    color: white;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a.github_link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.social_links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    flex-grow: 1;
+    flex-basis: auto;
+}
+
+.social_links .fa {
+    font-size: 24px;
+    color: var(--colorFive);
+    padding: 1rem;
+    cursor: pointer;
+
+}
+
+.social_links .fa:hover {
+    color: white;
+
+}
+
+.adresse {
+    flex-grow: 1;
+    flex-basis: auto;
+    font-family: Safety_Light, Helvetica, Arial, sans-serif;
+}
+
+.servicemenu {
+    flex-grow: 1;
+    flex-basis: auto;
+    font-family: Safety_DemiBold, Helvetica, Arial, sans-serif;
+}
+
+.servicemenu a {
+    color: var(--colorFive);
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.servicemenu a:hover {
+    color: white;
+}
+
+
+
+
+footer ul {
+    padding: 1rem;
+}
+
+footer li {
+    color: var(--colorFive);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+footer span.navn {
+    font-family: Safety_DemiBold, Helvetica, Arial, sans-serif;
+}
+
+
+/*------------------------------------*\
+5. FOOTER - SLUT
+\*------------------------------------*/
+
+/*------------------------------------*\
+6. KNAPPER
+\*------------------------------------*/
+
+/* Knap: Tilbage til toppen */
+.tilbage {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.top_link {
+    display: block;
+    padding: 2rem 1rem;
+    margin-left: auto;
+}
+
+.top_link a {
+    padding: 1rem 0;
+    margin-left: auto;
+    text-decoration: none;
+    color: var(--colorTwo);
+}
+
+.top_link h4 {
+    font-size: 2rem;
+    transition: all 0.25s ease 0s;
+}
+
+.top_link h4:hover {
+    color: var(--colorThree);
+
+}
+
+
+
+
+/* Knap: Tilbage til toppen SLUT*/
+
+/*------------------------------------*\
+6. KNAPPER - SLUT
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+7. STYLING AF SPECIFIKKE SIDER
+\*------------------------------------*/
+
+/*------------------------------------*\
+7.1 FORSIDE
+\*------------------------------------*/
+
+/*------------------------------------*\
+7.1 FORSIDE - SLUT
+\*------------------------------------*/
+
+/*------------------------------------*\
+7. STYLING AF SPECIFIKKE SIDER  - SLUT
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+8: MEDIA QUERIES
+\*------------------------------------*/
+
+/*------------------------------------*\
+8: MEDIA QUERIES - SLUT
+\*------------------------------------*/
