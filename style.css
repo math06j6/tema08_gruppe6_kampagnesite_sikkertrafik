@@ -13,7 +13,7 @@ INDHOLDSFORTEGNELSE:
 6. KNAPPER
 7. STYLING AF SPECIFIKKE SIDER
     7.1 FORSIDE
-    7.2 Single/"Detalje"
+    7.2 ???
 8. MEDIA QUERIES
 
 
@@ -68,6 +68,10 @@ body {
     background-color: white;
     overflow-wrap: break-word;
     hyphens: auto;
+}
+
+main {
+    min-height: calc(100vh-60px);
 }
 
 img {
