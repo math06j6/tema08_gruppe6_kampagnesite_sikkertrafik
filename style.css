@@ -132,8 +132,6 @@ ul {
 
 h1 {
     font-family: 'Open Sans', Helvetica, Arial, Roboto, sans-serif;
-
-    color: var(--colorTwo);
     font-size: 2.5rem;
 
 }
@@ -141,7 +139,6 @@ h1 {
 
 h2 {
     font-family: Safety_Light, Helvetica, Arial, sans-serif;
-    color: var(--colorTwo);
     font-size: 2.5rem;
     font-weight: 100;
     margin: 1rem 0;
@@ -172,7 +169,7 @@ ul {
 
 section {
     width: 100%;
-    padding: 2 0 4rem;
+    padding: 1rem 0;
 }
 
 .section_header {
@@ -249,6 +246,10 @@ nav {
     color: white;
 }
 
+.subnav a {
+    text-decoration: none;
+    color: inherit;
+}
 
 /* logo */
 
@@ -336,6 +337,29 @@ a.hjem:active p {
 }
 
 .searchButton:hover {
+    filter: invert(100%) sepia(28%) saturate(0%) hue-rotate(68deg) brightness(113%) contrast(100%);
+}
+
+.arrow_left {
+    background-image: url(filer/arrow_left.svg);
+    display: inline-block;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-position: center;
+    background-size: contain;
+    filter: invert(94%) sepia(0%) saturate(0%) hue-rotate(137deg) brightness(87%) contrast(95%);
+    background-position: center;
+    background-size: contain;
+    height: 100%;
+    background-repeat: no-repeat;
+    transition: .3s;
+    cursor: pointer;
+    vertical-align: bottom;
+}
+
+.subnav li:hover .arrow_left {
     filter: invert(100%) sepia(28%) saturate(0%) hue-rotate(68deg) brightness(113%) contrast(100%);
 }
 
@@ -468,7 +492,6 @@ footer span.navn {
 .top_link {
     display: flex;
     flex-wrap: wrap;
-    padding: 1rem;
     margin-left: auto;
 }
 
@@ -491,8 +514,26 @@ footer span.navn {
 
 }
 
+.arrow_up {
+    background-image: url(filer/arrow_up.svg);
+    display: inline-block;
+    padding: 30px;
+    width: 40px;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    filter: invert(24%) sepia(7%) saturate(970%) hue-rotate(177deg) brightness(89%) contrast(94%);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: .3s;
+    cursor: pointer;
+    vertical-align: bottom;
+}
 
-
+.arrow_up:hover {
+    filter: invert(61%) sepia(65%) saturate(766%) hue-rotate(60deg) brightness(104%) contrast(126%);
+}
 
 /* Knap: Tilbage til toppen SLUT*/
 
