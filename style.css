@@ -273,7 +273,7 @@ nav {
 .logo-container {
     cursor: pointer;
     height: 60px;
-    padding: 0 20px;
+    padding: 0 10px;
     /*    height: 100%;*/
     color: #3f0;
 }
@@ -365,6 +365,8 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    max-width: 1400px;
+    margin: auto;
 
 }
 
