@@ -100,31 +100,31 @@ ul {
 /* @font-face */
 
 @font-face {
-    font-family: Safety_Bold;
-    src: url("fonts/Safety-Bold_WEB.woff2") format("woff2"),
-        url("fonts/Safety-Bold_WEB.woff") format("woff");
-    font-weight: 400;
+    font-family: 'safety_bold';
+    src: url('fonts/safety-bold-webfont.woff2') format('woff2'),
+        url('fonts/safety-bold-webfont.woff') format('woff');
+    font-weight: normal;
     font-style: normal
 }
 
 @font-face {
-    font-family: Safety_DemiBold;
-    src: url("fonts/Safety-DemiBold_WEB.woff2") format("woff2"), url("fonts/Safety-DemiBold_WEB.woff") format("woff");
-    font-weight: 400;
+    font-family: 'safety_demibold';
+    src: url('fonts/safety-demibold-webfont.woff') format('woff2'), url('fonts/safety-demibold-webfont.woff') format('woff');
+    font-weight: normal;
     font-style: normal
 }
 
 @font-face {
-    font-family: Safety_Light;
-    src: url("fonts/Safety-Light_WEB.woff2") format("woff2"), url("fonts/Safety-Light_WEB.woff") format("woff");
-    font-weight: 400;
+    font-family: 'safety_light';
+    src: url('fonts/safety-light-webfont.woff2') format('woff2'), url('fonts/safety-light-webfont.woff') format('woff');
+    font-weight: normal;
     font-style: normal
 }
 
 @font-face {
-    font-family: Safety_Regular;
-    src: url("fonts/Safety-Regular_WEB.woff2") format("woff2"), url("fonts/Safety-Regular_WEB.woff") format("woff");
-    font-weight: 400;
+    font-family: 'safety_regular';
+    src: url('fonts/safety-regular-webfont.woff2') format('woff2'), url('fonts/safety-regular-webfont.woff') format('woff');
+    font-weight: normal;
     font-style: normal
 }
 
@@ -138,7 +138,7 @@ h1 {
 
 
 h2 {
-    font-family: Safety_Light, Helvetica, Arial, sans-serif;
+    font-family: 'safety_light', Helvetica, Arial, sans-serif;
     font-size: 2.5rem;
     font-weight: 100;
     margin: 1rem 0;
@@ -146,12 +146,12 @@ h2 {
 }
 
 h3 {
-    font-family: Safety_Light, Helvetica, Arial, sans-serif;
+    font-family: 'safety_light', Helvetica, Arial, sans-serif;
 
 }
 
 h4 {
-    font-family: Safety_Light, Helvetica, Arial, sans-serif;
+    font-family: 'safety_light', Helvetica, Arial, sans-serif;
 
 }
 
@@ -220,6 +220,42 @@ nav {
 
 }
 
+.menu_wrapper {}
+
+.menu_wrapper ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--colorSeven);
+    height: 100%;
+
+}
+
+.menu_wrapper li {
+    font-family: 'safety_demibold', Helvetica, Arial, sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+    /*    margin: auto 0;*/
+    padding: 21px;
+    text-align: center;
+    height: 100%;
+
+
+}
+
+.menu_wrapper li:hover {
+    background-color: var(--colorThree);
+    color: white;
+}
+
+li.menu_ikon {
+    padding: 0;
+}
+
+.menu_wrapper li.menu_ikon:hover {
+    background: var(--colorTwo);
+}
+
 .subnav {
     color: var(--colorSeven);
     margin: 0 auto;
@@ -236,7 +272,7 @@ nav {
 
 .subnav li {
     padding: 21px;
-    font-family: Safety_DemiBold, Helvetica, Arial, sans-serif;
+    font-family: 'safety_demibold', Helvetica, Arial, sans-serif;
     font-size: 0.9rem;
     cursor: pointer;
 }
@@ -254,14 +290,17 @@ nav {
 /* logo */
 
 
-.navigation .logo {
-    height: 30px;
-    width: 180px;
-
+.logo-container {
+    cursor: pointer;
+    height: 60px;
+    /*     height: 100%;*/
+    padding: 0 10px;
+    /*    height: 100%;*/
+    color: #3f0;
 }
 
 .logo-container svg {
-    height: 30px;
+    height: 34px;
     width: 180px;
     fill: #fff;
     margin: auto 0;
@@ -269,32 +308,6 @@ nav {
 
 .logo-container:hover svg {
     fill: #3f0;
-}
-
-.logo-container {
-    cursor: pointer;
-    height: 60px;
-    padding: 0 10px;
-    /*    height: 100%;*/
-    color: #3f0;
-}
-
-.nyt_logo {
-    /*SVG-filen er indsat som background-image. Det gør det muligt at skifte farve på filen*/
-    background-image: url("filer/logo.png");
-    display: inline-block;
-    padding: 10px;
-    width: 40px;
-    height: 40px;
-    margin: auto 0;
-    background-position: center;
-    background-size: contain;
-    /*Vi bruger filter til at vælge hvid som farve*/
-    filter: invert(100%) sepia(28%) saturate(0%) hue-rotate(68deg) brightness(113%) contrast(100%);
-    background-position: center;
-    background-size: contain;
-    height: 100%;
-    background-repeat: no-repeat;
 }
 
 /* logo - slut */
@@ -432,13 +445,13 @@ social_links {
 .adresse {
     flex-grow: 1;
     flex-basis: auto;
-    font-family: Safety_Light, Helvetica, Arial, sans-serif;
+    font-family: 'safety_light', Helvetica, Arial, sans-serif;
 }
 
 .servicemenu {
     flex-grow: 1;
     flex-basis: auto;
-    font-family: Safety_DemiBold, Helvetica, Arial, sans-serif;
+    font-family: 'safety_demibold', Helvetica, Arial, sans-serif;
 }
 
 .servicemenu a {
@@ -470,7 +483,7 @@ footer li {
 }
 
 footer span.navn {
-    font-family: Safety_DemiBold, Helvetica, Arial, sans-serif;
+    font-family: 'safety_demibold', Helvetica, Arial, sans-serif;
 }
 
 
@@ -499,7 +512,7 @@ footer span.navn {
     padding: 1rem 0;
     margin-left: auto;
     text-decoration: none;
-    font-family: Safety_DemiBold, Helvetica, Arial, sans-serif;
+    font-family: 'safety_demibold', Helvetica, Arial, sans-serif;
     display: block;
 }
 
