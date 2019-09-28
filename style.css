@@ -297,6 +297,10 @@ li.menu_ikon {
     padding: 0 10px;
     /*    height: 100%;*/
     color: #3f0;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .logo-container svg {
@@ -567,6 +571,12 @@ footer span.navn {
 7.1 FORSIDE - SLUT
 \*------------------------------------*/
 
+.video_logo {
+    font-family: 'safety_bold';
+    font-size: 1.2rem;
+    color: white;
+    margin: 6.5px 3px;
+}
 
 /*------------------------------------*\
 7. STYLING AF SPECIFIKKE SIDER  - SLUT
