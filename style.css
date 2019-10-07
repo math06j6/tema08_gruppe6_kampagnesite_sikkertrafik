@@ -571,6 +571,30 @@ footer span.navn {
 7.1 FORSIDE - SLUT
 \*------------------------------------*/
 
+
+.landing_video {
+    /*    display: block;*/
+    /*    position: absolute;*/
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    overflow: hidden;
+    max-height: 60vh;
+}
+
+#videoBG {
+/*
+    height: 100%;
+    width: 100%;
+*/
+    display: block;
+    object-fit: cover;
+    /*    position: fixed;*/
+    z-index: -1;
+
+}
+
 .video_logo {
     font-family: 'safety_bold';
     font-size: 1.2rem;
@@ -603,6 +627,28 @@ main {
 /*------------------------------------*\
 8: MEDIA QUERIES
 \*------------------------------------*/
+
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #videoBG {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    #videoBG {
+        display: none;
+    }
+}
+
+
 
 
 @media only screen and (min-width: 800px) {
