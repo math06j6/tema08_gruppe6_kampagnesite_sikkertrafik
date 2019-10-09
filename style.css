@@ -131,7 +131,7 @@ ul {
 /* @font-face Slut */
 
 h1 {
-    font-family: 'Open Sans', Helvetica, Arial, Roboto, sans-serif;
+    font-family: 'safety_light', Helvetica, Arial, sans-serif;
     font-size: 2.5rem;
 
 }
@@ -159,6 +159,7 @@ p {
     font-family: 'Open Sans', Helvetica, Arial, Roboto, sans-serif;
     font-size: 1rem;
     line-height: 1.6;
+    max-width: 650px;
 }
 
 
@@ -178,6 +179,20 @@ section {
     max-width: 1400px;
 }
 
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+button {
+    cursor: pointer;
+    font-family: 'safety_light', Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+}
+
 /*------------------------------------*\
 3. TYPOGRAFI - SLUT
 \*------------------------------------*/
@@ -190,6 +205,7 @@ section {
     position: sticky;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 nav {
@@ -228,6 +244,7 @@ nav {
     align-items: center;
     color: var(--colorSeven);
     height: 100%;
+    padding: 0 0.5rem;
 
 }
 
@@ -242,6 +259,19 @@ nav {
 
 
 }
+
+.menu_wrapper li a {
+    font-family: 'safety_demibold', Helvetica, Arial, sans-serif;
+    font-size: 0.9rem;
+    text-align: center;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+
+}
+
+
+
 
 .menu_wrapper li:hover {
     background-color: var(--colorThree);
@@ -336,7 +366,7 @@ a.hjem:active p {
 }
 
 .searchButton {
-    background-image: url(filer/search_icon.svg);
+    background-image: url(files/search_icon.svg);
     display: inline-block;
     padding: 20px;
     width: 40px;
@@ -358,8 +388,8 @@ a.hjem:active p {
 }
 
 .arrow_left {
-    background-image: url(filer/arrow_left.svg);
-    display: inline-block;
+    background-image: url(files/arrow_left.svg);
+    /*    display: inline-block;*/
     padding: 10px;
     width: 20px;
     height: 20px;
@@ -532,7 +562,7 @@ footer span.navn {
 }
 
 .arrow_up {
-    background-image: url(filer/arrow_up.svg);
+    background-image: url(files/arrow_up.svg);
     display: inline-block;
     padding: 30px;
     width: 40px;
@@ -580,18 +610,60 @@ footer span.navn {
     bottom: 0px;
     left: 0px;
     overflow: hidden;
-    max-height: 60vh;
+    /*    max-height: 60vh;*/
+
+    height: calc(100vh - 60px);
+    /*        width: 100%;*/
 }
 
 #videoBG {
-/*
+    /*
     height: 100%;
     width: 100%;
 */
     display: block;
     object-fit: cover;
+    /*    background-size: cover;*/
     /*    position: fixed;*/
     z-index: -1;
+
+
+}
+
+.content {
+    position: absolute;
+    bottom: 20px;
+    color: white;
+    width: 100%;
+    /*    padding: 1rem;*/
+    margin: 0 auto;
+    padding: 1rem;
+    /*    max-width: 1400px;*/
+}
+
+.baggrund {
+    display: none;
+}
+
+
+
+#loopButton {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 22px;
+    margin: 1rem 0;
+    min-width: 135px;
+    margin: 5px 5px 20px auto;
+    font-family: 'safety_demibold', Helvetica, Arial, sans-serif;
+
+}
+
+#loopButton:hover {
+    background: white;
+    color: var(--colorThree);
+
 
 }
 
@@ -623,6 +695,21 @@ main {
     color: white;
 }
 
+.statement {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.statement h2 {
+    padding: 1rem 0;
+}
+
+.gray_section {
+    background: #eaeaea;
+}
 
 /*------------------------------------*\
 8: MEDIA QUERIES
@@ -631,29 +718,64 @@ main {
 @media (min-aspect-ratio: 16/9) {
     #videoBG {
         width: 100%;
-        height: auto;
+        height: 100%;
+        /*        position: fixed;*/
     }
 }
 
 @media (max-aspect-ratio: 16/9) {
     #videoBG {
-        width: auto;
+        width: 100%;
         height: 100%;
+        /*        position: fixed;*/
     }
 }
 
 @media (max-width: 767px) {
-    #videoBG {
+
+    #videoBG,
+    #loopButton {
         display: none;
     }
+
+    .baggrund {
+        display: block;
+        background: url("files/images/poster_loop.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        background-position: 40% 0%;
+    }
 }
-
-
 
 
 @media only screen and (min-width: 800px) {
     .menu_bottom {
         display: block;
+    }
+
+    .statement h2 {
+        font-size: 3rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .landing_video {
+        height: calc(100vh - 117px);
+    }
+
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+
+
+    h1,
+    .statement h2 {
+        font-size: 4rem;
     }
 
 }

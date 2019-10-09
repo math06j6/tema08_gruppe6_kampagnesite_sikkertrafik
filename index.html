@@ -6,14 +6,14 @@
     <title>Sikkertrafik</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
-    <link rel="apple-touch-icon" sizes="180x180" href="filer/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="filer/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="filer/favicons/favicon-16x16.png">
-    <link rel="manifest" href="filer/favicons/site.webmanifest">
-    <link rel="mask-icon" href="filer/favicons/safari-pinned-tab.svg" color="#33ff00">
-    <link rel="shortcut icon" href="filer/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="files/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="files/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="files/favicons/favicon-16x16.png">
+    <link rel="manifest" href="files/favicons/site.webmanifest">
+    <link rel="mask-icon" href="files/favicons/safari-pinned-tab.svg" color="#33ff00">
+    <link rel="shortcut icon" href="files/favicons/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="filer/favicons/browserconfig.xml">
+    <meta name="msapplication-config" content="files/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
@@ -30,15 +30,19 @@
                 <div class="navbar">
                     <div class="logo-container">
                         <a href="index.html" class="hjem">
-                            <svg class="redd">
-                                <use xlink:href="filer/logo.svg#navn" />
-                                <use xlink:href="filer/logo.svg#cirkel" fill-rule="evenodd" clip-rule="evenodd" fill="#33ff00" />
+                            <svg class="logo">
+                                <use xlink:href="files/logo.svg#navn" />
+                                <use xlink:href="files/logo.svg#cirkel" fill-rule="evenodd" clip-rule="evenodd" fill="#33ff00" />
                             </svg>
                         </a>
                     </div>
                     <div class="menu_wrapper">
                         <ul>
                             <li>Kampagner</li>
+                            <li>
+                                <a href="video_portfolio.html" class="dropbtn">Video portfolio
+                                </a>
+                            </li>
                             <li class="menu_ikon">
                                 <div class="searchButton"></div>
                             </li>
@@ -50,7 +54,7 @@
                 <div class="subnav">
                     <ul>
                         <li><span class="arrow_left"></span> Kampagner</li>
-                        <li><span class="arrow_left"></span>Vores Kampagnenavn???</li>
+                        <li><span class="arrow_left"></span>Kampagnesite: Vores Kampagnenavn???</li>
                     </ul>
                 </div>
             </div>
@@ -60,30 +64,77 @@
     <main>
         <div>
             <div class="landing_video">
-                <video id="videoBG" class="videoloop" autoplay loop muted controlslist="nodownload" crossorigin="anonymous" playsinline="" preload="auto">
-                    <source src="filer/videos/ember%20&%20sparks.MP4" type="video/mp4">
+                <video id="videoBG" poster="files/images/poster_loop.jpg" xf autoplay loop muted controlslist="nodownload" crossorigin="anonymous" playsinline="" preload="auto">
+                    <source src="files/videos/loop.mp4" type="video/mp4">
                 </video>
+                <div class="content">
+                    <section>
+                        <header class="section_header">
+                            <h1>Drop hornene, når du kører bil</h1>
+                        </header>
+                        <div class="sectionwrapper">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, vero consequuntur sint id quisquam incidunt ducimus facilis distinctio saepe numquam veritatis reiciendis itaque dolores.</p>
+                            <button id="loopButton">
+                                <span id="button-text">Sæt på pause</span>
+                            </button>
+                        </div>
+                    </section>
+                </div>
+                <div class="baggrund"></div>
             </div>
         </div>
-        <article>
-            <section class="blue_section">
-                <header class="section_header">
-                    <h2>Kampagnesite</h2>
-                    <div class="testtest"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi molestias modi eos ad, asperiores eveniet, quo fugiat dignissimos dicta praesentium assumenda totam, provident eaque, cupiditate! Consequatur reprehenderit beatae laudantium eos quod inventore dicta aut accusantium at rerum! Cum, tenetur ea repudiandae quaerat consectetur sequi nisi pariatur nostrum in quisquam maxime ab veritatis nemo delectus nobis, explicabo possimus sapiente sed repellendus tempore nesciunt facilis. Hic reprehenderit odit numquam, vitae error nesciunt, rerum aliquam molestiae necessitatibus. Impedit quos incidunt delectus inventore repellat, ut asperiores, officia. Sit, molestias maxime et, maiores aperiam commodi optio tempore necessitatibus saepe labore ipsum? Perferendis, porro alias repudiandae.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores expedita reiciendis omnis unde molestias modi sed error suscipit, aut, atque nulla molestiae illo voluptatem et alias rerum. Quo velit, molestiae.
-                    </p>
-                </header>
-            </section>
-            <section>
-                <header class="section_header">
-                    <h2>Kampagnesite</h2>
-
+        <section>
+            <header class="section_header">
+                <h2>Kampagnesite</h2>
+            </header>
+            <div class="sectionwrapper">
+                <div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, vero consequuntur sint id quisquam incidunt ducimus facilis distinctio saepe numquam veritatis reiciendis itaque dolores quis at, error blanditiis sapiente nostrum. Quae delectus ullam vel illum consequatur nulla, suscipit quia, temporibus iure similique, laboriosam, sunt voluptas voluptatum ipsum ex natus. Sequi obcaecati architecto illum similique, tempora nostrum soluta illo doloremque iusto excepturi, modi ullam enim est minus nihil dolor! Optio neque dolores temporibus tempore ut consectetur recusandae fugiat deserunt totam aspernatur quos unde debitis dolorem qui, iure distinctio quia facilis ad voluptate, animi veritatis nulla id fuga cumque. Illum, esse, officia.
                     </p>
-                </header>
-            </section>
-        </article>
+                </div>
+                <div>
 
+                </div>
+            </div>
+        </section>
+        <section class="blue_section">
+            <header class="section_header">
+                <h2>Kampagnesite</h2>
+                <div class="testtest"></div>
+            </header>
+            <div class="sectionwrapper">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, vero consequuntur sint id quisquam incidunt ducimus facilis distinctio saepe numquam veritatis reiciendis itaque dolores quis at, error blanditiis sapiente nostrum. Quae delectus ullam vel illum consequatur nulla, suscipit quia, temporibus iure similique, laboriosam, sunt voluptas voluptatum ipsum ex natus. Sequi obcaecati architecto illum similique, tempora nostrum soluta illo doloremque iusto excepturi, modi ullam enim est minus nihil dolor! Optio neque dolores temporibus tempore ut consectetur recusandae fugiat deserunt totam aspernatur quos unde debitis dolorem qui, iure distinctio quia facilis ad voluptate, animi veritatis nulla id fuga cumque. Illum, esse, officia.
+                </p>
+            </div>
+        </section>
+        <section class="gray_section">
+            <header class="section_header">
+                <h2>Se kampagnefilmen - Drop hornene, når du kører bil</h2>
+            </header>
+            <div class="sectionwrapper">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, vero consequuntur sint id quisquam incidunt ducimus facilis distinctio saepe numquam veritatis reiciendis itaque dolores quis at, error blanditiis sapiente nostrum. Quae delectus ullam vel illum consequatur nulla, suscipit quia, temporibus iure similique, laboriosam, sunt voluptas voluptatum ipsum ex natus. Sequi obcaecati architecto illum similique, tempora nostrum soluta illo doloremque iusto excepturi, modi ullam enim est minus nihil dolor! Optio neque dolores temporibus tempore ut consectetur recusandae fugiat deserunt totam aspernatur quos unde debitis dolorem qui, iure distinctio quia facilis ad voluptate, animi veritatis nulla id fuga cumque. Illum, esse, officia.
+                </p>
+            </div>
+        </section>
+        <section class="blue_section">
+            <div class="statement">
+                <h2>Langt flere mænd end kvinder kommer til skade i trafikken. I 2018 var syv ud af ti dræbte mænd.</h2>
+            </div>
+        </section>
+        <section>
+            <header class="section_header">
+                <h2>Kampagnesite</h2>
+            </header>
+            <div class="sectionwrapper">
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, vero consequuntur sint id quisquam incidunt ducimus facilis distinctio saepe numquam veritatis reiciendis itaque dolores quis at, error blanditiis sapiente nostrum. Quae delectus ullam vel illum consequatur nulla, suscipit quia, temporibus iure similique, laboriosam, sunt voluptas voluptatum ipsum ex natus. Sequi obcaecati architecto illum similique, tempora nostrum soluta illo doloremque iusto excepturi, modi ullam enim est minus nihil dolor! Optio neque dolores temporibus tempore ut consectetur recusandae fugiat deserunt totam aspernatur quos unde debitis dolorem qui, iure distinctio quia facilis ad voluptate, animi veritatis nulla id fuga cumque. Illum, esse, officia.
+                    </p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </section>
         <div class="tilbage">
             <div class="top_link">
                 <a href="#">
