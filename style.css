@@ -614,6 +614,7 @@ footer span.navn {
 
     height: calc(100vh - 60px);
     /*        width: 100%;*/
+    background-color: var(--colorOne);
 }
 
 #videoBG {
@@ -664,6 +665,11 @@ footer span.navn {
     background: white;
     color: var(--colorThree);
 
+
+}
+
+#button-text {
+    font-family: 'safety_demibold', Helvetica, Arial, sans-serif;
 
 }
 
