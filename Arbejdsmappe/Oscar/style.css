@@ -1,0 +1,791 @@
+/*------------------------------------*\
+****************************************
+
+
+INDHOLDSFORTEGNELSE:
+********************
+
+1: VARIABLER
+2. LAYOUT
+3. TYPOGRAFI
+4. HEADER
+5. FOOTER
+6. KNAPPER
+7. STYLING AF SPECIFIKKE SIDER
+    7.1 FORSIDE
+    7.2 ???
+8. MEDIA QUERIES
+
+
+****************************************
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+1: VARIABLER
+\*------------------------------------*/
+
+:root {
+
+    /* Nøjagtig de samme farvekoder som anvendes på https://www.sikkertrafik.dk/ */
+    --colorOne: #1a1a1a;
+    --colorTwo: #28292c;
+    --colorThree: #373d46;
+    --colorFour: #414b5a;
+    --colorFive: #9ea1a5;
+    --colorSix: #eaeaea;
+    --colorSeven: #ccc;
+    --colorEight: #6c7b95;
+    --colorNine: #5A80D0;
+    --colorTen: #3f0;
+    --colorElleven: #fd6d6f;
+}
+
+
+
+/*------------------------------------*\
+1. VARIABLER - SLUT
+\*------------------------------------*/
+
+
+
+
+/*------------------------------------*\
+2. LAYOUT
+\*------------------------------------*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    color: var(--colorThree);
+}
+
+main {}
+
+img {
+    width: 100%;
+    height: auto;
+
+}
+
+ul {
+    list-style: none;
+}
+
+/*------------------------------------*\
+2. LAYOUT - SLUT
+\*------------------------------------*/
+
+/*------------------------------------*\
+3. TYPOGRAFI
+\*------------------------------------*/
+
+/* @font-face */
+
+@font-face {
+    font-family: 'safety_bold';
+    src: url('fonts/safety-bold-webfont.woff2') format('woff2'),
+        url('fonts/safety-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'safety_demibold';
+    src: url('fonts/safety-demibold-webfont.woff') format('woff2'), url('fonts/safety-demibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'safety_light';
+    src: url('fonts/safety-light-webfont.woff2') format('woff2'), url('fonts/safety-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'safety_regular';
+    src: url('fonts/safety-regular-webfont.woff2') format('woff2'), url('fonts/safety-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal
+}
+
+/* @font-face Slut */
+
+h1 {
+    font-family: 'safety_light', Helvetica, Arial, sans-serif;
+    font-size: 2.5rem;
+
+}
+
+
+h2 {
+    font-family: 'safety_light', Helvetica, Arial, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin: 1rem 0;
+
+}
+
+h3 {
+    font-family: 'safety_light', Helvetica, Arial, sans-serif;
+
+}
+
+h4 {
+    font-family: 'safety_light', Helvetica, Arial, sans-serif;
+
+}
+
+p {
+    font-family: 'Open Sans', Helvetica, Arial, Roboto, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 650px;
+}
+
+
+
+ul {
+    list-style: none;
+}
+
+section {
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.section_header {
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 1400px;
+}
+
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+button {
+    cursor: pointer;
+    font-family: 'safety_light', Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+}
+
+/*------------------------------------*\
+3. TYPOGRAFI - SLUT
+\*------------------------------------*/
+
+/*------------------------------------*\
+4. HEADER
+\*------------------------------------*/
+
+.site_header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+
+
+}
+
+.menu_top {
+    background-color: var(--colorTwo);
+
+
+}
+
+.menu_bottom {
+    background-color: var(--colorThree);
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    max-width: 1400px;
+
+}
+
+.menu_wrapper {}
+
+.menu_wrapper ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--colorSeven);
+    height: 100%;
+    padding: 0 0.5rem;
+
+}
+
+.menu_wrapper li {
+    font-family: 'safety_demibold', Helvetica, Arial, sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+    /*    margin: auto 0;*/
+    padding: 21px;
+    text-align: center;
+    height: 100%;
+
+
+}
+
+.menu_wrapper li a {
+    font-family: 'safety_demibold', Helvetica, Arial, sans-serif;
+    font-size: 0.9rem;
+    text-align: center;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+
+}
+
+
+
+
+.menu_wrapper li:hover {
+    background-color: var(--colorThree);
+    color: white;
+}
+
+li.menu_ikon {
+    padding: 0;
+}
+
+.menu_wrapper li.menu_ikon:hover {
+    background: var(--colorTwo);
+}
+
+.subnav {
+    color: var(--colorSeven);
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1400px;
+
+}
+
+.subnav ul {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+}
+
+.subnav li {
+    padding: 21px;
+    font-family: 'safety_demibold', Helvetica, Arial, sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.subnav li:hover,
+.subnav li:active {
+    color: white;
+}
+
+.subnav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* logo */
+
+
+.logo-container {
+    cursor: pointer;
+    height: 60px;
+    /*     height: 100%;*/
+    padding: 0 10px;
+    /*    height: 100%;*/
+    color: #3f0;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.logo-container svg {
+    height: 34px;
+    width: 180px;
+    fill: #fff;
+    margin: auto 0;
+}
+
+.logo-container:hover svg {
+    fill: #3f0;
+}
+
+/* logo - slut */
+
+/* Styling af link i navigations bar */
+a.hjem {
+    color: var(--colorTen);
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.25s;
+    display: flex;
+    height: 100%;
+}
+
+a.hjem p {
+    font-family: 'Open Sans', Helvetica, Arial, Roboto, sans-serif;
+}
+
+a.hjem:hover p,
+a.hjem:active p {
+    color: var(--colorThree);
+}
+
+.searchButton {
+    background-image: url(files/search_icon.svg);
+    display: inline-block;
+    padding: 20px;
+    width: 40px;
+    height: 40px;
+    margin: auto 0;
+    background-position: center;
+    background-size: contain;
+    filter: invert(94%) sepia(0%) saturate(0%) hue-rotate(137deg) brightness(87%) contrast(95%);
+    background-position: center;
+    background-size: contain;
+    height: 100%;
+    background-repeat: no-repeat;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.searchButton:hover {
+    filter: invert(100%) sepia(28%) saturate(0%) hue-rotate(68deg) brightness(113%) contrast(100%);
+}
+
+.arrow_left {
+    background-image: url(files/arrow_left.svg);
+    /*    display: inline-block;*/
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-position: center;
+    background-size: contain;
+    filter: invert(94%) sepia(0%) saturate(0%) hue-rotate(137deg) brightness(87%) contrast(95%);
+    background-position: center;
+    background-size: contain;
+    height: 100%;
+    background-repeat: no-repeat;
+    transition: .3s;
+    cursor: pointer;
+    vertical-align: bottom;
+}
+
+.subnav li:hover .arrow_left {
+    filter: invert(100%) sepia(28%) saturate(0%) hue-rotate(68deg) brightness(113%) contrast(100%);
+}
+
+/*------------------------------------*\
+4. HEADER - SLUT
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+5. FOOTER
+\*------------------------------------*/
+
+footer {
+    background: var(--colorTwo);
+    color: white;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    overflow: hidden;
+
+
+}
+
+.footer_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: auto;
+
+}
+
+a.github_link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.social_links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    flex-grow: 1;
+    flex-basis: auto;
+}
+
+.social_links .fa {
+    font-size: 24px;
+    color: var(--colorFive);
+    padding: 1rem;
+    cursor: pointer;
+
+}
+
+.social_links .fa:hover {
+    color: white;
+
+}
+
+footer .servicemenu,
+footer .adresse,
+social_links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adresse {
+    flex-grow: 1;
+    flex-basis: auto;
+    font-family: 'safety_light', Helvetica, Arial, sans-serif;
+}
+
+.servicemenu {
+    flex-grow: 1;
+    flex-basis: auto;
+    font-family: 'safety_demibold', Helvetica, Arial, sans-serif;
+}
+
+.servicemenu a {
+    color: var(--colorFive);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: .3s;
+    transition: .3s;
+    padding: 0.5rem 0;
+}
+
+.servicemenu a:hover {
+    color: white;
+}
+
+
+
+
+footer ul {
+    padding: 1rem;
+}
+
+footer li {
+    color: var(--colorFive);
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+footer span.navn {
+    font-family: 'safety_demibold', Helvetica, Arial, sans-serif;
+}
+
+
+/*------------------------------------*\
+5. FOOTER - SLUT
+\*------------------------------------*/
+
+/*------------------------------------*\
+6. KNAPPER
+\*------------------------------------*/
+
+/* Knap: Tilbage til toppen */
+.tilbage {
+    max-width: 1400px;
+    margin: 0 auto;
+
+}
+
+.top_link {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+}
+
+.top_link a {
+    padding: 1rem 0;
+    margin-left: auto;
+    text-decoration: none;
+    font-family: 'safety_demibold', Helvetica, Arial, sans-serif;
+    display: block;
+}
+
+.top_link h4 {
+    font-size: 2rem;
+    transition: all 0.25s ease 0s;
+    color: var(--colorEight);
+}
+
+.top_link h4:hover {
+    color: var(--colorThree);
+
+}
+
+.arrow_up {
+    background-image: url(files/arrow_up.svg);
+    display: inline-block;
+    padding: 30px;
+    width: 40px;
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    filter: invert(24%) sepia(7%) saturate(970%) hue-rotate(177deg) brightness(89%) contrast(94%);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: .3s;
+    cursor: pointer;
+    vertical-align: bottom;
+}
+
+.arrow_up:hover {
+    filter: invert(61%) sepia(65%) saturate(766%) hue-rotate(60deg) brightness(104%) contrast(126%);
+}
+
+/* Knap: Tilbage til toppen SLUT*/
+
+/*------------------------------------*\
+6. KNAPPER - SLUT
+\*------------------------------------*/
+
+
+/*------------------------------------*\
+7. STYLING AF SPECIFIKKE SIDER
+\*------------------------------------*/
+
+/*------------------------------------*\
+7.1 FORSIDE
+\*------------------------------------*/
+
+/*------------------------------------*\
+7.1 FORSIDE - SLUT
+\*------------------------------------*/
+
+
+.landing_video {
+    /*    display: block;*/
+    /*    position: absolute;*/
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    overflow: hidden;
+    /*    max-height: 60vh;*/
+
+    height: calc(100vh - 60px);
+    /*        width: 100%;*/
+    background-color: var(--colorOne);
+}
+
+#videoBG {
+    /*
+    height: 100%;
+    width: 100%;
+*/
+    display: block;
+    object-fit: cover;
+    /*    background-size: cover;*/
+    /*    position: fixed;*/
+    z-index: -1;
+
+
+}
+
+.content {
+    position: absolute;
+    bottom: 20px;
+    color: white;
+    width: 100%;
+    /*    padding: 1rem;*/
+    margin: 0 auto;
+    padding: 1rem;
+    /*    max-width: 1400px;*/
+}
+
+.baggrund {
+    display: none;
+}
+
+
+
+#loopButton {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 22px;
+    margin: 1rem 0;
+    min-width: 135px;
+    margin: 5px 5px 20px auto;
+    font-family: 'safety_demibold', Helvetica, Arial, sans-serif;
+
+}
+
+#loopButton:hover {
+    background: white;
+    color: var(--colorThree);
+
+
+}
+
+#button-text {
+    font-family: 'safety_demibold', Helvetica, Arial, sans-serif;
+
+}
+
+.video_logo {
+    font-family: 'safety_bold';
+    font-size: 1.2rem;
+    color: white;
+    margin: 6.5px 3px;
+}
+
+/*------------------------------------*\
+7. STYLING AF SPECIFIKKE SIDER  - SLUT
+\*------------------------------------*/
+
+main {
+    min-height: calc(100vh - 213px);
+}
+
+.blue_section {
+    background-color: var(--colorFour);
+    color: white;
+}
+
+
+.blue_section h2,
+.blue_section h3,
+.blue_section h4,
+.blue_section p {
+    color: white;
+}
+
+.statement {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.statement h2 {
+    padding: 1rem 0;
+}
+
+.gray_section {
+    background: #eaeaea;
+}
+
+/*------------------------------------*\
+8: MEDIA QUERIES
+\*------------------------------------*/
+
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width: 100%;
+        height: 100%;
+        /*        position: fixed;*/
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #videoBG {
+        width: 100%;
+        height: 100%;
+        /*        position: fixed;*/
+    }
+}
+
+@media (max-width: 767px) {
+
+    #videoBG,
+    #loopButton {
+        display: none;
+    }
+
+    .baggrund {
+        display: block;
+        background: url("files/images/poster_loop.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        background-position: 40% 0%;
+    }
+}
+
+
+@media only screen and (min-width: 800px) {
+    .menu_bottom {
+        display: block;
+    }
+
+    .statement h2 {
+        font-size: 3rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    .landing_video {
+        height: calc(100vh - 117px);
+    }
+
+}
+
+
+
+@media only screen and (min-width: 1000px) {
+
+
+    h1,
+    .statement h2 {
+        font-size: 4rem;
+    }
+
+}
+
+/*------------------------------------*\
+8: MEDIA QUERIES - SLUT
+\*------------------------------------*/
