@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sikkertrafik</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <link rel="apple-touch-icon" sizes="180x180" href="files/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="files/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="files/favicons/favicon-16x16.png">
+    <link rel="manifest" href="files/favicons/site.webmanifest">
+    <link rel="mask-icon" href="files/favicons/safari-pinned-tab.svg" color="#33ff00">
+    <link rel="shortcut icon" href="files/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="files/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <!--  Vi gør brug af ikoner fra Font Awesome - via W3schools.
+   Link: https://www.w3schools.com/icons/fontawesome_icons_intro.asp  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+    <header class="site_header">
+        <nav>
+            <div class="menu_top">
+                <div class="navbar">
+                    <div class="logo-container">
+                        <a href="index.html" class="hjem">
+                            <svg class="logo">
+                                <use xlink:href="files/logo.svg#navn" />
+                                <use xlink:href="files/logo.svg#cirkel" fill-rule="evenodd" clip-rule="evenodd" fill="#33ff00" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="menu_wrapper">
+                        <ul>
+                            <li>Kampagner</li>
+                            <li>
+                                <a href="video_portfolio.html" class="dropbtn">Video portfolio
+                                </a>
+                            </li>
+                            <li class="menu_ikon">
+                                <div class="searchButton"></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_bottom">
+                <div class="subnav">
+                    <ul>
+                        <li><span class="arrow_left"></span> Kampagner</li>
+                        <li><span class="arrow_left"></span>Kampagnesite: Vores Kampagnenavn???</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <div class="landing_video">
+                <video id="videoBG" poster="files/images/poster_loop.jpg" xf autoplay loop muted controlslist="nodownload" crossorigin="anonymous" playsinline="" preload="auto">
+                    <source src="files/videos/loop.mp4" type="video/mp4">
+                </video>
+                <div class="content">
+                    <section>
+                        <header class="section_header">
+                            <h1>Drop hornene, når du kører bil</h1>
+                        </header>
+                        <div class="sectionwrapper">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, vero consequuntur sint id quisquam incidunt ducimus facilis distinctio saepe numquam veritatis reiciendis itaque dolores.</p>
+                            <button id="loopButton">
+                                <p id="button-text">Sæt på pause</p>
+                            </button>
+                        </div>
+                    </section>
+                </div>
+                <div class="baggrund"></div>
+            </div>
+        </div>
+        <section>
+            <header class="section_header">
+                <h2>Kampagnesite</h2>
+            </header>
+            <div class="sectionwrapper">
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, vero consequuntur sint id quisquam incidunt ducimus facilis distinctio saepe numquam veritatis reiciendis itaque dolores quis at, error blanditiis sapiente nostrum. Quae delectus ullam vel illum consequatur nulla, suscipit quia, temporibus iure similique, laboriosam, sunt voluptas voluptatum ipsum ex natus. Sequi obcaecati architecto illum similique, tempora nostrum soluta illo doloremque iusto excepturi, modi ullam enim est minus nihil dolor! Optio neque dolores temporibus tempore ut consectetur recusandae fugiat deserunt totam aspernatur quos unde debitis dolorem qui, iure distinctio quia facilis ad voluptate, animi veritatis nulla id fuga cumque. Illum, esse, officia.
+                    </p>
+                </div>
+                <div class="huskeliste">
+                   <h2>Huskeliste</h2>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="option1"/>
+                        <label for="option1">Write article<svg viewBox="0 0 60 40" aria-hidden="true" focusable="false"><path d="m3.124999,25.643504c5.012531,3.662044 5.885904,4.497881 6.805974,5.423372c0.968372,0.974074 1.95255,1.990147 2.920971,3.038505c1.887865,2.043697 3.508594,3.952108 4.16288,4.815733c1.10625,1.460196 1.907562,2.681891 2.593617,4.156528c0.868725,1.867283 1.665478,3.070787 2.467523,1.704158c0.50852,-0.866489 1.803369,-3.5137 2.680103,-5.308913c1.015387,-2.079118 2.136671,-4.395025 3.386848,-6.87277c1.315846,-2.607892 2.702433,-5.281056 4.187936,-7.938041c1.474865,-2.63796 4.522064,-7.534116 6.101237,-9.655968c1.474153,-1.980741 2.969361,-3.730587 4.436496,-5.270958c1.351014,-1.418455 2.682274,-2.619145 3.899598,-3.690096l1.116484,-0.925128" stroke-linecap="null" stroke-linejoin="null"  stroke-width="5" fill="none" stroke-dasharray="270" stroke-dashoffset="270"></path></svg></label>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="option2"/>
+                        <label for="option2">Write article<svg viewBox="0 0 60 40" aria-hidden="true" focusable="false"><path d="m3.124999,25.643504c5.012531,3.662044 5.885904,4.497881 6.805974,5.423372c0.968372,0.974074 1.95255,1.990147 2.920971,3.038505c1.887865,2.043697 3.508594,3.952108 4.16288,4.815733c1.10625,1.460196 1.907562,2.681891 2.593617,4.156528c0.868725,1.867283 1.665478,3.070787 2.467523,1.704158c0.50852,-0.866489 1.803369,-3.5137 2.680103,-5.308913c1.015387,-2.079118 2.136671,-4.395025 3.386848,-6.87277c1.315846,-2.607892 2.702433,-5.281056 4.187936,-7.938041c1.474865,-2.63796 4.522064,-7.534116 6.101237,-9.655968c1.474153,-1.980741 2.969361,-3.730587 4.436496,-5.270958c1.351014,-1.418455 2.682274,-2.619145 3.899598,-3.690096l1.116484,-0.925128" stroke-linecap="null" stroke-linejoin="null"  stroke-width="5" fill="none" stroke-dasharray="270" stroke-dashoffset="270"></path></svg></label>
+                    </div>
+                    <div class="checkbox-wrapper">
+                        <input type="checkbox" id="option3"/>
+                        <label for="option3">Write article  <svg viewBox="0 0 60 40" aria-hidden="true" focusable="false"><path d="m3.124999,25.643504c5.012531,3.662044 5.885904,4.497881 6.805974,5.423372c0.968372,0.974074 1.95255,1.990147 2.920971,3.038505c1.887865,2.043697 3.508594,3.952108 4.16288,4.815733c1.10625,1.460196 1.907562,2.681891 2.593617,4.156528c0.868725,1.867283 1.665478,3.070787 2.467523,1.704158c0.50852,-0.866489 1.803369,-3.5137 2.680103,-5.308913c1.015387,-2.079118 2.136671,-4.395025 3.386848,-6.87277c1.315846,-2.607892 2.702433,-5.281056 4.187936,-7.938041c1.474865,-2.63796 4.522064,-7.534116 6.101237,-9.655968c1.474153,-1.980741 2.969361,-3.730587 4.436496,-5.270958c1.351014,-1.418455 2.682274,-2.619145 3.899598,-3.690096l1.116484,-0.925128" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" fill="none" stroke-dasharray="270" stroke-dashoffset="270"></path></svg></label>
+                    </div>             
+                </div>
+            </div>
+        </section>
+        <section class="blue_section">
+            <header class="section_header">
+                <h2>Kampagnesite</h2>
+                <div class="testtest"></div>
+            </header>
+            <div class="sectionwrapper">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, vero consequuntur sint id quisquam incidunt ducimus facilis distinctio saepe numquam veritatis reiciendis itaque dolores quis at, error blanditiis sapiente nostrum. Quae delectus ullam vel illum consequatur nulla, suscipit quia, temporibus iure similique, laboriosam, sunt voluptas voluptatum ipsum ex natus. Sequi obcaecati architecto illum similique, tempora nostrum soluta illo doloremque iusto excepturi, modi ullam enim est minus nihil dolor! Optio neque dolores temporibus tempore ut consectetur recusandae fugiat deserunt totam aspernatur quos unde debitis dolorem qui, iure distinctio quia facilis ad voluptate, animi veritatis nulla id fuga cumque. Illum, esse, officia.
+                </p>
+            </div>
+        </section>
+        <section class="gray_section">
+            <header class="section_header">
+                <h2>Se kampagnefilmen - Drop hornene, når du kører bil</h2>
+            </header>
+            <div class="sectionwrapper">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, vero consequuntur sint id quisquam incidunt ducimus facilis distinctio saepe numquam veritatis reiciendis itaque dolores quis at, error blanditiis sapiente nostrum. Quae delectus ullam vel illum consequatur nulla, suscipit quia, temporibus iure similique, laboriosam, sunt voluptas voluptatum ipsum ex natus. Sequi obcaecati architecto illum similique, tempora nostrum soluta illo doloremque iusto excepturi, modi ullam enim est minus nihil dolor! Optio neque dolores temporibus tempore ut consectetur recusandae fugiat deserunt totam aspernatur quos unde debitis dolorem qui, iure distinctio quia facilis ad voluptate, animi veritatis nulla id fuga cumque. Illum, esse, officia.
+                </p>
+            </div>
+        </section>
+        <section class="blue_section">
+            <div class="statement">
+                <h2>Langt flere mænd end kvinder kommer til skade i trafikken. I 2018 var syv ud af ti dræbte mænd.</h2>
+            </div>
+        </section>
+        <section>
+            <header class="section_header">
+                <h2>Kampagnesite</h2>
+            </header>
+            <div class="sectionwrapper">
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, vero consequuntur sint id quisquam incidunt ducimus facilis distinctio saepe numquam veritatis reiciendis itaque dolores quis at, error blanditiis sapiente nostrum. Quae delectus ullam vel illum consequatur nulla, suscipit quia, temporibus iure similique, laboriosam, sunt voluptas voluptatum ipsum ex natus. Sequi obcaecati architecto illum similique, tempora nostrum soluta illo doloremque iusto excepturi, modi ullam enim est minus nihil dolor! Optio neque dolores temporibus tempore ut consectetur recusandae fugiat deserunt totam aspernatur quos unde debitis dolorem qui, iure distinctio quia facilis ad voluptate, animi veritatis nulla id fuga cumque. Illum, esse, officia.
+                    </p>
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </section>
+        <div class="tilbage">
+            <div class="top_link">
+                <a href="#">
+                    <span class="arrow_up"></span>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_wrapper">
+            <div class="adresse">
+                <ul>
+                    <li><span class="navn">Rådet for Sikker Trafik</span></li>
+                    <li>Lersø Parkallé 111</li>
+                    <li>2100 København Ø</li>
+                </ul>
+            </div>
+            <div class="social_links">
+                <!-- Ikoner fra Font Awesome-->
+                <a href="https://www.facebook.com/sikkertrafik">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <i class="fa fa-snapchat"></i>
+                <a href="https://www.instagram.com/raadet_for_sikker_trafik/">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/sikkertrafik">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="https://www.youtube.com/user/Sikkertrafik">
+                    <i class="fa fa-youtube-play"></i>
+                </a>
+                <a href="https://github.com/math06j6/tema08_gruppe6_kampagnesite_sikkertrafik">
+                    <i class="fa fa-github"></i>
+                </a>
+            </div>
+            <div class="servicemenu">
+                <ul>
+                    <li><a href="https://www.sikkertrafik.dk/presse/pressekontakt">Pressekontakt</a></li>
+                    <li><a href="https://www.sikkertrafik.dk/persondatapolitik">Persondatapolitik</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"> </script>
+</body></html>
