@@ -197,6 +197,17 @@ section {
     padding: 1rem;
 }
 
+.col_left {
+    flex-grow: 1;
+    flex-basis: 500px;
+
+}
+
+.col_right {
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
 button {
     cursor: pointer;
     font-family: 'safety_light', Helvetica, Arial, sans-serif;
@@ -694,6 +705,12 @@ footer span.navn {
  Huskeliste
 \*------------------------------------*/
 
+.interaktion {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 .huskeliste {
     background-color: var(--colorSix);
     padding: 20px;
@@ -702,18 +719,19 @@ footer span.navn {
     border-radius: 5px;
 }
 
-.huskeliste h2{
+.huskeliste h2 {
     font-family: 'Just Another Hand', cursive;
     font-size: 3rem;
 }
 
-.checkbox-wrapper svg { 
+.checkbox-wrapper svg {
     width: 1em;
     height: 1em;
     position: absolute;
-    left: 0.5em; 
+    left: 0.5em;
     top: .3em;
 }
+
 .checkbox-wrapper label {
     display: block;
     padding: .25em .5em .25em 2em;
@@ -725,7 +743,7 @@ footer span.navn {
 }
 
 label svg path {
-    transition: stroke-dashoffset .5s linear; 
+    transition: stroke-dashoffset .5s linear;
 }
 
 input[type="checkbox"] {

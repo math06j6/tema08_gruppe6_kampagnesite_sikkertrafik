@@ -21,7 +21,6 @@ INDHOLDSFORTEGNELSE:
 ****************************************
 \*------------------------------------*/
 
-
 /*------------------------------------*\
 1: VARIABLER
 \*------------------------------------*/
@@ -186,6 +185,17 @@ section {
     max-width: 1400px;
     margin: 0 auto;
     padding: 1rem;
+}
+
+.col_left {
+    flex-grow: 1;
+    flex-basis: 500px;
+
+}
+
+.col_right {
+    flex-grow: 1;
+    flex-basis: 500px;
 }
 
 button {
@@ -771,10 +781,7 @@ main {
     background: #eaeaea;
 }
 
-video_test {
-    width: 100%;
-    padding: 2rem 0 4rem;
-}
+
 
 .video_content {
     position: relative;
@@ -798,9 +805,77 @@ video_test {
 
 .testing {
     display: flex;
-
+    justify-content: center;
+    align-content: center;
     margin: auto;
 }
+
+/*------------------------------------*\
+7.2 Huskeliste - interaktion
+\*------------------------------------*/
+
+.interaktion {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.huskeliste {
+    background-color: var(--colorSix);
+    padding: 20px;
+    flex-grow: 0.3;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.huskeliste h2 {
+    font-family: 'Just Another Hand', cursive;
+    font-size: 3rem;
+}
+
+.checkbox-wrapper svg {
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    left: 0.5em;
+    top: .3em;
+}
+
+.checkbox-wrapper label {
+    display: block;
+    padding: .25em .5em .25em 2em;
+    position: relative;
+    cursor: pointer;
+    font-family: 'Just Another Hand', cursive;
+    font-size: 1.8rem;
+    text-align: start;
+}
+
+label svg path {
+    transition: stroke-dashoffset .5s linear;
+}
+
+input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    left: .75em;
+    top: .75em;
+    font-family: Indie Flower;
+    display: none
+}
+
+input[type="checkbox"]:checked ~ label {
+    text-decoration: line-through;
+}
+
+input[type="checkbox"]:checked ~ label svg path {
+    stroke-dashoffset: 0;
+    stroke: currentColor;
+}
+
+/*------------------------------------*\
+7.2 Huskeliste - interaktion - SLUT
+\*------------------------------------*/
 
 /*------------------------------------*\
 8: MEDIA QUERIES
