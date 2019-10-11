@@ -7,11 +7,18 @@ function sidenVises() {
 
     //    document.querySelector("#menuknap").addEventListener("click", toggleMenu);
 
+    document.querySelector(".menuknap").addEventListener("click", menuFunction);
     document.querySelector("#loopButton").addEventListener("click", pauseLoop);
 
 }
 
+function menuFunction() {
+    /* Ved klik tilføjes eller fjernes "responsive" class på topnav */
+    console.log("menuFunction");
+    let x = document.querySelector("#myTopnav");
 
+    x.classList.toggle("change");
+}
 
 
 function pauseLoop() {

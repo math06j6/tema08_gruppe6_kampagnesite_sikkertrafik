@@ -213,9 +213,17 @@ nav {
     position: sticky;
     top: 0;
     width: 100%;
-
-
 }
+
+.home {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
 
 .menu_top {
     background-color: var(--colorTwo);
@@ -237,7 +245,52 @@ nav {
 
 }
 
-.menu_wrapper {}
+/*MENUKNAP*/
+.menuknap {
+    display: inline-block;
+    cursor: pointer;
+    color: var(--colorOne);
+    padding: 0 1rem;
+}
+
+
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 30px;
+    height: 3px;
+    background-color: var(--colorSeven);
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.menuknap:hover .bar1,
+.menuknap:hover .bar2,
+.menuknap:hover .bar3 {
+    background-color: white;
+}
+
+/* Roterer den fÃ¸rste bar */
+.change .bar1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+/* Fjerner den anden bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Roterer den anden bar */
+.change .bar3 {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+/*MENUKNAP*/
+
+.menu_wrapper {
+    width: 100%;
+}
 
 .menu_wrapper ul {
     display: flex;
@@ -718,6 +771,37 @@ main {
     background: #eaeaea;
 }
 
+video_test {
+    width: 100%;
+    padding: 2rem 0 4rem;
+}
+
+.video_content {
+    position: relative;
+    margin: 0;
+    padding-bottom: calc(100% * 9 / 16);
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    background-color: #000;
+    background-position: 50%;
+    background-size: 20% auto;
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+
+#video_big {
+    width: 80vw;
+    height: 45vw;
+    border: 0;
+}
+
+.testing {
+    display: flex;
+
+    margin: auto;
+}
+
 /*------------------------------------*\
 8: MEDIA QUERIES
 \*------------------------------------*/
@@ -738,7 +822,23 @@ main {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
+
+    /* Der tilføjes en class ("responsive") til topnav vha. JavaScript, når der klikkes på menuknappen. */
+    .topnav.change {
+        position: relative;
+
+    }
+
+    .menu_wrapper {
+        display: none;
+    }
+
+
+    .topnav.change .menu_wrapper {
+        display: block;
+    }
+
 
     #videoBG,
     #loopButton {
@@ -757,6 +857,16 @@ main {
 
 
 @media only screen and (min-width: 800px) {
+
+    .topnav .menuknap {
+        display: none;
+    }
+
+
+    .change .bar1,
+    .change .bar2,
+    .change .bar3 {}
+
     .menu_bottom {
         display: block;
     }
