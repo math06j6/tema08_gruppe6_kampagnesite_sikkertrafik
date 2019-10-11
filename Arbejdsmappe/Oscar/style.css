@@ -89,6 +89,16 @@ ul {
     list-style: none;
 }
 
+iframe {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.iframeVideo {
+    flex-grow: 1;
+}
+
 /*------------------------------------*\
 2. LAYOUT - SLUT
 \*------------------------------------*/
@@ -681,11 +691,20 @@ footer span.navn {
 }
 
 /*------------------------------------*\
- Hukseliste
+ Huskeliste
 \*------------------------------------*/
 
 .huskeliste {
-    border: 2px solid var(--colorFour);
+    background-color: var(--colorSix);
+    padding: 20px;
+    flex-grow: 0.3;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.huskeliste h2{
+    font-family: 'Just Another Hand', cursive;
+    font-size: 3rem;
 }
 
 .checkbox-wrapper svg { 
@@ -695,11 +714,14 @@ footer span.navn {
     left: 0.5em; 
     top: .3em;
 }
-label {
+.checkbox-wrapper label {
     display: block;
     padding: .25em .5em .25em 2em;
     position: relative;
     cursor: pointer;
+    font-family: 'Just Another Hand', cursive;
+    font-size: 1.8rem;
+    text-align: start;
 }
 
 label svg path {
@@ -712,6 +734,7 @@ input[type="checkbox"] {
     left: .75em;
     top: .75em;
     font-family: Indie Flower;
+    display: none
 }
 
 input[type="checkbox"]:checked ~ label {
@@ -722,7 +745,6 @@ input[type="checkbox"]:checked ~ label svg path {
     stroke-dashoffset: 0;
     stroke: currentColor;
 }
-
 
 /*------------------------------------*\
 7. STYLING AF SPECIFIKKE SIDER  - SLUT
