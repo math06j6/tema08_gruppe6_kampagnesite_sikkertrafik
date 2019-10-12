@@ -219,6 +219,17 @@ button {
     z-index: 1;
 }
 
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    overflow: hidden;
+    margin: auto;
+}
+
+
+
 nav {
     position: sticky;
     top: 0;
@@ -783,6 +794,9 @@ main {
 
 
 
+
+
+/*
 .video_content {
     position: relative;
     margin: 0;
@@ -796,18 +810,44 @@ main {
     cursor: pointer;
     background-repeat: no-repeat;
 }
+*/
+
+.kampagne_video {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.video_wrapper {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+
+}
 
 #video_big {
+    /*
     width: 80vw;
     height: 45vw;
     border: 0;
+*/
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 
+
+
 .testing {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin: auto;
+    margin-top: 50px;
+    /*
+    padding-left: 15px;
+    padding-right: 15px;
+*/
 }
 
 /*------------------------------------*\
@@ -899,19 +939,47 @@ input[type="checkbox"]:checked ~ label svg path {
 
 @media (max-width: 800px) {
 
-    /* Der tilføjes en class ("responsive") til topnav vha. JavaScript, når der klikkes på menuknappen. */
+    /* Der tilføjes en class ("change") til topnav vha. JavaScript, når der klikkes på menuknappen. */
     .topnav.change {
         position: relative;
+        background-color: var(--colorTwo);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
 
+    }
+
+    .topnav.change .menu_wrapper li,
+    .topnav.change .menu_wrapper li a {
+        font-size: calc(1rem + 1vw);
+        background-color: inherit;
+    }
+
+    .menu_wrapper ul {
+        flex-direction: column;
     }
 
     .menu_wrapper {
         display: none;
     }
 
+    .navbar {
+        flex-wrap: nowrap;
+        flex-direction: column;
+
+    }
 
     .topnav.change .menu_wrapper {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 15vh 0;
     }
 
 
