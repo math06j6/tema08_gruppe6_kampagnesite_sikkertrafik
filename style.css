@@ -939,10 +939,18 @@ input[type="checkbox"]:checked ~ label svg path {
     padding-bottom: 2rem;
 }
 
+#nyhedsbrev figure {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+
+
+
 #nyhedsbrev .formular {
-    padding: 8px 30px 30px 30px;
-    margin: 0 2rem 2rem 2rem;
-    max-width: 600px;
+    padding: 1rem 2rem 2rem;
+    margin: 0 auto 2rem;
+    max-width: 650px;
     border-radius: 5px;
     background-color: var(--colorFour);
 }
@@ -962,7 +970,7 @@ input[type="checkbox"]:checked ~ label svg path {
     border: 2px solid var(--colorFour);
     border-radius: 4px;
     background-color: #eaeaea;
-    font-family: 'Open Sans', Helvetica, Arial, Roboto, sans-serif;
+    font-family: 'safety_light', Helvetica, Arial, sans-serif;
     font-weight: 400;
 }
 
