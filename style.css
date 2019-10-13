@@ -147,7 +147,9 @@ h2 {
 
 h3 {
     font-family: 'safety_light', Helvetica, Arial, sans-serif;
-
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin: 1rem 0;
 }
 
 h4 {
@@ -815,7 +817,7 @@ main {
 .kampagne_video {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 1rem 1rem 4rem 1rem;
 }
 
 .video_wrapper {
@@ -866,6 +868,7 @@ main {
     flex-grow: 0.3;
     text-align: center;
     border-radius: 5px;
+    margin-bottom: 2rem;
 }
 
 .huskeliste h2 {
@@ -916,6 +919,122 @@ input[type="checkbox"]:checked ~ label svg path {
 /*------------------------------------*\
 7.2 Huskeliste - interaktion - SLUT
 \*------------------------------------*/
+
+/*------------------------------------*\
+7.2 Huskeliste - interaktion - SLUT
+\*------------------------------------*/
+/* Nyhedsbrev */
+
+.roed {
+    color: var(--colorElleven);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#nyhedsbrev {
+    padding: 0 1rem 1rem 1rem;
+}
+
+#nyhedsbrev .col_left {
+    padding-bottom: 2rem;
+}
+
+#nyhedsbrev .formular {
+    padding: 8px 30px 30px 30px;
+    margin: 0 2rem 2rem 2rem;
+    max-width: 600px;
+    border-radius: 5px;
+    background-color: var(--colorFour);
+}
+
+
+#nyhedsbrev .signup {}
+
+#nyhedsbrev input[type=text],
+#nyhedsbrev input[type=number],
+#nyhedsbrev input[type=date],
+#nyhedsbrev input[type=tel],
+#nyhedsbrev input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid var(--colorFour);
+    border-radius: 4px;
+    background-color: #eaeaea;
+    font-family: 'Open Sans', Helvetica, Arial, Roboto, sans-serif;
+    font-weight: 400;
+}
+
+#tilmeld {
+    display: inline-block;
+    border-radius: 4px;
+    font-family: 'Open Sans', Helvetica, Arial, Roboto, sans-serif;
+    font-size: 1rem;
+}
+
+#nyhedsbrev input[type=text]:focus,
+#nyhedsbrev input[type=email]:focus {
+    background-color: white;
+}
+
+#nyhedsbrev input[type=submit] {
+    width: 100%;
+    background-color: var(--colorThree);
+    color: #ffffff;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    border-color: var(--colorThree);
+    font-family: 'safety_demibold', Helvetica, Arial, sans-serif;
+}
+
+#nyhedsbrev input[type=submit]:hover {
+    background-color: var(--colorTwo);
+    border-color: var(--colorTwo);
+}
+
+#nyhedsbrev .txt,
+#nyhedsbrev .name,
+#nyhedsbrev .email {
+    font-size: 1rem;
+}
+
+#nyhedsbrev .bday {
+    color: rgb(117, 117, 117)
+}
+
+input type="date"required="required" > #tilmeld_nu .button {
+    color: #ffffff;
+    background-color: #ecf0f1;
+    font-weight: bold;
+}
+
+
+#nyhedsbrev .text {
+    margin: 5px;
+    padding: 5px;
+    padding-top: 30px;
+}
+
+#nyhedsbrev .foto {
+    margin: 5px;
+    padding: 5px;
+    padding-top: 50px;
+}
+
+#nyhedsbrev .col_right p {
+    color: white;
+
+}
+
+#nyhedsbrev h2,
+#nyhedsbrev h3 {
+    color: white;
+}
+
+/* Nyhedsbrev - Slut*/
 
 /*------------------------------------*\
 8: MEDIA QUERIES
