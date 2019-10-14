@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<style>
+		#container {
+			width: 80vw;
+			border: 1px solid;
+			background-color: #6c7b95;
+		}
+
+		#linier {
+			stroke: #fff;
+			stroke-width: .5;
+		}
+
+		#text {
+			font-family: 'safety_light', Helvetica, Arial, sans-serif;
+			fill: #fff;
+			font-size: 6px;
+		}
+
+		#bars {
+			stroke: #3f0;
+			stroke-width: 10;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="container">
+		<svg id="diagram" viewbox="-20 -10 230 120">
+			<g id="linier">
+				<line x1="0" y1="100" x2="0" y2="0" />
+				<line x1="0" y1="100" x2="200" y2="100" />
+				<line x1="0" y1="80" x2="200" y2="80" />
+				<line x1="0" y1="60" x2="200" y2="60" />
+				<line x1="0" y1="40" x2="200" y2="40" />
+				<line x1="0" y1="20" x2="200" y2="20" />
+
+			</g>
+			<g id="text">
+
+				<text x="-16" y="83">100</text>
+				<text x="-16" y="63">200</text>
+				<text x="-16" y="43">300</text>
+				<text x="-16" y="23">400</text>
+				<text x="13" y="107">2008</text>
+				<text x="30" y="107">2009</text>
+				<text x="48" y="107">2010</text>
+				<text x="65" y="107">2011</text>
+				<text x="82" y="107">2012</text>
+				<text x="99" y="107">2013</text>
+				<text x="116" y="107">2014</text>
+				<text x="132" y="107">2015</text>
+				<text x="148" y="107">2016</text>
+				<text x="164" y="107">2017</text>
+				<text x="180" y="107">2018</text>
+
+			</g>
+			<g id="bars">
+				<line x1="20" y1="100" x2="20" y2="18" />
+				<line x1="38" y1="100" x2="38" y2="38" />
+				<line x1="55" y1="100" x2="55" y2="48" />
+				<line x1="71" y1="100" x2="71" y2="55" />
+				<line x1="88" y1="100" x2="88" y2="68" />
+				<line x1="105" y1="100" x2="105" y2="62" />
+				<line x1="123" y1="100" x2="123" y2="65" />
+				<line x1="139" y1="100" x2="139" y2="66" />
+				<line x1="155" y1="100" x2="155" y2="55" />
+				<line x1="170" y1="100" x2="170" y2="66" />
+				<line x1="186" y1="100" x2="186" y2="67" />
+
+
+			</g>
+
+		</svg>
+	</div>
+	<script>
+		const values = [76, 10, 97, 50];
+
+		document.querySelectorAll("#bars line").forEach((bar, i) => {
+			console.log(bar, i);
+			bar.setAttribute("y2", 100 - values[i])
+			bar.addEventListener("mouseover", e => {
+				console.log(values[i])
+				bar.setAttribute("data-value", values[i])
+				document.querySelector("#disp").textContent = values[i];
+				console.log(bar.dataset.value)
+			})
+		}) -- >
+	</script>
+
+</body></html>
