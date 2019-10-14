@@ -761,10 +761,6 @@ footer span.navn {
 7. STYLING AF SPECIFIKKE SIDER  - SLUT
 \*------------------------------------*/
 
-main {
-    min-height: calc(100vh - 213px);
-}
-
 .blue_section {
     background-color: var(--colorFour);
     color: white;
@@ -941,7 +937,7 @@ input[type="checkbox"]:checked ~ label svg path {
 
 #nyhedsbrev figure {
     max-width: 650px;
-    margin: 0 auto;
+    padding-bottom: 1rem;
 }
 
 
@@ -949,7 +945,7 @@ input[type="checkbox"]:checked ~ label svg path {
 
 #nyhedsbrev .formular {
     padding: 1rem 2rem 2rem;
-    margin: 0 auto 2rem;
+    margin: 2rem 0;
     max-width: 650px;
     border-radius: 5px;
     background-color: var(--colorFour);
@@ -1032,10 +1028,6 @@ input type="date"required="required" > #tilmeld_nu .button {
     padding-top: 50px;
 }
 
-#nyhedsbrev .col_right p {
-    color: white;
-
-}
 
 #nyhedsbrev h2,
 #nyhedsbrev h3 {
