@@ -878,6 +878,7 @@ footer span.navn {
     position: absolute;
     left: 0.5em;
     top: .3em;
+    border: 2px solid #000000;
 }
 
 .checkbox-wrapper label {
