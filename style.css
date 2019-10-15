@@ -1037,6 +1037,30 @@ input type="date"required="required" > #tilmeld_nu .button {
 
 /* Nyhedsbrev - Slut*/
 
+/* Søjlediagram */ 
+
+#container {
+    width: 40vw;
+    border: 1px solid;
+    background-color: #6c7b95;
+}
+
+#linier {
+    stroke: #fff;
+    stroke-width: .5;
+}
+
+#text {
+    font-family: 'safety_light', Helvetica, Arial, sans-serif;
+    fill: #fff;
+    font-size: 6px;
+}
+
+#bars {
+    stroke: #3f0;
+    stroke-width: 10;
+}
+
 /*------------------------------------*\
 8: MEDIA QUERIES
 \*------------------------------------*/
