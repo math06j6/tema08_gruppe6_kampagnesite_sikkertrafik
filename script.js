@@ -17,8 +17,7 @@ function sidenVises() {
 
 }
 
-Function VisDiagram()
-{
+function VisDiagram() {
     document.querySelectorAll("#bars line").forEach((bar, i) => {
         console.log(bar, i);
         bar.setAttribute("y2", 100 - values[i])
