@@ -141,7 +141,7 @@ h2 {
     font-family: 'safety_light', Helvetica, Arial, sans-serif;
     font-size: 2.5rem;
     font-weight: 100;
-    margin: 1rem 0;
+
 
 }
 
@@ -162,6 +162,7 @@ p {
     font-size: 1rem;
     line-height: 1.6;
     max-width: 650px;
+    padding: 1rem 0;
 }
 
 
@@ -172,13 +173,14 @@ ul {
 
 section {
     width: 100%;
-    padding: 1rem 0;
+    padding: 2.5rem 0;
 }
 
 .section_header {
     margin: 0 auto;
-    padding: 1rem;
     max-width: 1400px;
+    /*    padding-bottom: 1rem;*/
+    padding: 1rem 0;
 }
 
 .sectionwrapper {
@@ -192,12 +194,14 @@ section {
 .col_left {
     flex-grow: 1;
     flex-basis: 500px;
+    margin: 0 1rem;
 
 }
 
 .col_right {
     flex-grow: 1;
     flex-basis: 500px;
+    margin: 0 1rem;
 }
 
 button {
@@ -779,11 +783,11 @@ footer span.navn {
     flex-wrap: wrap;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0 2rem;
 }
 
 .statement h2 {
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 
 .gray_section {
@@ -822,6 +826,7 @@ footer span.navn {
     padding-bottom: 56.25%;
     padding-top: 30px;
     position: relative;
+    margin-top: 1rem;
 
 }
 
@@ -933,12 +938,19 @@ input[type="checkbox"]:checked ~ label svg path {
 }
 
 #nyhedsbrev .col_left {
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 #nyhedsbrev figure {
-    max-width: 650px;
-    padding-bottom: 1rem;
+    /*    max-width: 650px;*/
+    padding: 1rem 0;
+    height: 100%;
+}
+
+#nyhedsbrev img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 
@@ -946,8 +958,7 @@ input[type="checkbox"]:checked ~ label svg path {
 
 #nyhedsbrev .formular {
     padding: 1rem 2rem 2rem;
-    margin: 2rem 0;
-    max-width: 650px;
+    margin-top: 1rem;
     border-radius: 5px;
     background-color: var(--colorFour);
 }
@@ -1030,19 +1041,18 @@ input type="date"required="required" > #tilmeld_nu .button {
 }
 
 
-#nyhedsbrev h2,
 #nyhedsbrev h3 {
     color: white;
 }
 
 /* Nyhedsbrev - Slut*/
 
-/* Søjlediagram */ 
+/* Søjlediagram */
 
 #container {
-    width: 40vw;
     border: 1px solid;
     background-color: #6c7b95;
+    margin: 1rem 0;
 }
 
 #linier {
