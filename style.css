@@ -754,7 +754,7 @@ footer span.navn {
     padding: 10px 22px;
     margin: 1rem 0;
     min-width: 135px;
-    margin: 16px;
+    margin: 16px auto;
     font-family: 'safety_demibold', Helvetica, Arial, sans-serif;
 
 }
