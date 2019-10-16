@@ -133,7 +133,7 @@ ul {
 h1 {
     font-family: 'safety_light', Helvetica, Arial, sans-serif;
     font-size: 2.5rem;
-    padding: 0 1rem;
+    padding: 0 2rem;
 
 }
 
@@ -725,7 +725,7 @@ footer span.navn {
     justify-content: space-between;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 1rem 2rem;
 }
 
 
@@ -834,7 +834,7 @@ footer span.navn {
 .kampagne_video {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 1rem 1rem 2rem 1rem;
+    padding: 1rem 2rem;
 }
 
 .video_wrapper {
