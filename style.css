@@ -274,6 +274,7 @@ nav {
     flex-wrap: nowrap;
     margin: 0 auto;
     max-width: 1400px;
+    padding: 0 1rem;
 
 }
 
@@ -377,6 +378,7 @@ li.menu_ikon {
     margin: 0 auto;
     padding: 0;
     max-width: 1400px;
+    padding: 0 0.5rem;
 
 }
 
